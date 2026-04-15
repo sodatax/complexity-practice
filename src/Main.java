@@ -6,7 +6,7 @@ import java.util.Set;
 public class Main {
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n^2)
   public static void timesTable(int x) {
     for(int i = 1; i <= x; i++) {
         for(int j = 1; j <= x; j++) {
@@ -17,7 +17,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n = letter
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
 
@@ -27,7 +27,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n = bannedPassword
   public static boolean isBanned(String password) {
     String[] bannedPasswords = {"password", "hello", "qwerty"};
     boolean banned = false;
@@ -41,7 +41,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n = num
   public static int computeProduct(int[] nums) {
     int total = 1;
     for(int num : nums) {
@@ -51,7 +51,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n = num
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
     int product = computeProduct(nums);
@@ -60,7 +60,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {
@@ -71,6 +71,7 @@ public class Main {
 
   // Assume that the largest number is no bigger than the length
   // of the array
+  // O(n) where n = num
   public static void computeAllFactorials(int[] nums) {
     for(int num : nums) {
         int result = computeFactorial(num);
@@ -81,7 +82,7 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(1)
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
         System.out.println(target + " is present in the list");
@@ -94,7 +95,7 @@ public class Main {
   // assume n = wordsA.length = wordsB.length
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n = wordA
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
     for(String wordA : wordsA) {
         for(String wordB : wordsB) {
@@ -108,7 +109,7 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n = word
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
     for(String word : wordsA) {
